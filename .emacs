@@ -13,15 +13,17 @@
  ;; If there is more than one, they won't work right.
  )
 
-(require 'package)
 
+(require 'package)
+;; more packages
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/"))
 
+;; last version of org
 (add-to-list 'load-path "/home/marie/Documents/logiciels/org-8.3.4/lisp")
 (add-to-list 'load-path "/home/marie/Documents/logiciels/org-8.3.4/contrib/lisp" t)
 
-;; chargement
+;; org load
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
